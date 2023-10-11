@@ -30,6 +30,21 @@ Disk Used/Total       : 100G / 500G
 
 ```
 
+## deps
+
+- /etc/motd
+
+  ```shell
+  sudo touch /etc/motd
+  sudo chmod 666 /etc/motd
+  ```
+
+- figlet
+
+  ```shell
+  brew install figlet
+  ```
+
 ## install
 
 ```shell

@@ -61,5 +61,9 @@
 			<integer>55</integer>
 		</dict>
 	</array>
+	<key>StandardOutPath</key>
+	<string>/tmp/suwa-sh.update-motd.out</string>
+	<key>StandardErrorPath</key>
+	<string>/tmp/suwa-sh.update-motd.err</string>
 </dict>
 </plist>

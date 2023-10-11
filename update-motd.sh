@@ -8,7 +8,7 @@ COLOR_RED='\033[0;31m'
 COLOR_WHITE='\033[0;37m'
 
 echo -e "
-${COLOR_LIGHT_GREEN}$(/usr/local/bin/figlet -ckw 100 -f slant $(hostname | sed -e 's/.local//'))
+${COLOR_LIGHT_GREEN}$(figlet -ckw 100 -f slant $(hostname | sed -e 's/.local//'))
 ${COLOR_WHITE}Motd Updated          : ${COLOR_LIGHT_BLUE}$(date '+%Y/%m/%d %T')
 ${COLOR_WHITE}Hostname              : ${COLOR_LIGHT_BLUE}$(hostname)
 ${COLOR_WHITE}Privte IP Address     : ${COLOR_LIGHT_BLUE}$(ifconfig en0 2>/dev/null | grep 'inet ' | cut -d ' ' -f 2)
