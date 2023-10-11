@@ -1,6 +1,7 @@
 .PHONY: install
 
 install:
+	./update-motd.sh
 	mkdir -p ${HOME}/Library/LaunchDaemons/
 	cp update-motd.plist ${HOME}/Library/LaunchDaemons/
 	launchctl load -w ${HOME}/Library/LaunchDaemons/update-motd.plist
